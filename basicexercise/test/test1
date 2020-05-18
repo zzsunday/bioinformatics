@@ -1,0 +1,6 @@
+   search --no-floppy --fs-uuid --set=root 5ec8dd27-fee4-4a3c-8d1d-ed0112c6c275
+set root='hd0,msdos1'
+   search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos1 --hint-efi=hd0,msdos1 --hint-baremetal=ahci0,msdos1 --hint='hd0,msdos1' 5ec8dd27-fee4-4a3c-8d1d-ed0112c6c275
+   search --no-floppy --fs-uuid --set=root 5ec8dd27-fee4-4a3c-8d1d-ed0112c6c275
+  source ${config_directory}/custom.cfg
+  source $prefix/custom.cfg;

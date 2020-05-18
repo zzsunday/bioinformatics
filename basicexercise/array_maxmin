@@ -1,0 +1,17 @@
+#!/bin/bash
+
+declare -a rand
+for ((i=0;i<10;i++));do
+	rand[$i]=$RANDOM
+	if [ "$i" -eq 0 ];then
+		max=${rand[$i])}
+		min=$max
+	else
+		[ $max -lt ${rand[$i]} ] && { max=${rand[$i]};continue; }
+		[ $min -gt ${rand[$i]} ] && { min=${rand[$i]}; } 
+	fi
+done
+
+echo all rand is ${rand[*]}
+echo max is $max
+echo min is $$min

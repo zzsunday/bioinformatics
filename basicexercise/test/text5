@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# NAME:  Miniconda3
+# VER:   4.6.14
+# PLAT:  linux-64
+# BYTES:     70348401
+# LINES: 539
+# MD5:   3b03ac60617957c1f3fa27f450db4992
+
+export OLD_LD_LIBRARY_PATH=$LD_LIBRARY_PATH
